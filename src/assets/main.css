@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+@font-face {
+	font-family: Ravi;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/woff/Ravi-SemiBold.woff') format('woff'),   
+	url('fonts/woff2/Ravi-SemiBold.woff2') format('woff2');		 
+}
+@font-face {
+	font-family: IranNastaliq;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/IranNastaliq.ttf') format('ttf'),   
+}
+*{
+  font-family: Ravi;
+}
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.IranNastaliq{
+  font-family: IranNastaliq;
+}
+}
